@@ -472,6 +472,25 @@ class _CipherHomePageState extends State<CipherHomePage> {
                         ),
                       ),
                       const SizedBox(width: 12),
+                      const SizedBox(width: 8),
+                      Container(
+                        height: 60,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Colors.red.shade50,
+                          borderRadius: BorderRadius.circular(15),
+                          border: Border.all(color: Colors.red.shade200),
+                        ),
+                        child: IconButton(
+                          onPressed: _clearAll,
+                          icon: Icon(
+                            Icons.cleaning_services,
+                            color: Colors.red.shade700,
+                            size: 24,
+                          ),
+                          tooltip: 'Clear All',
+                        ),
+                      ),
                       // Swap Button
                       Container(
                         height: 60,
